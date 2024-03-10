@@ -71,10 +71,12 @@ pre {
 
 /**
  * Remove the gray background on active links in IE 10.
+ * Remove the text decoration by default.
  */
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -107,6 +109,14 @@ kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
+}
+
+/**
+ * Remove list type by default.
+ */
+
+li {
+  list-style: none;
 }
 
 /**

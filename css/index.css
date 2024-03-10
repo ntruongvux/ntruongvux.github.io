@@ -89,9 +89,11 @@ pre {
    ========================================================================== */
 /**
  * Remove the gray background on active links in IE 10.
+ * Remove the text decoration by default.
  */
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -122,6 +124,13 @@ kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
+}
+
+/**
+ * Remove list type by default.
+ */
+li {
+  list-style: none;
 }
 
 /**
@@ -354,10 +363,71 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-.link {
-  text-decoration: none;
+a {
+  color: inherit;
+}
+
+.container {
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-12 {
+  gap: 96px;
+}
+
+#header {
+  height: 56px;
+}
+#header .logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+#header .nav .nav-item {
+  display: inline-block;
+}
+#header .nav .nav-item a {
+  padding: 8px;
+}
+#header .nav .nav-item a[aria-current], #header .nav .nav-item a:hover {
+  background-color: #0c0c0c;
+  color: #fff;
+}
+
+#footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 80px;
+}
+
+section {
+  height: 50vh;
+}
+section:nth-child(odd) {
+  background-color: #fff;
   color: #0c0c0c;
 }
-.link:hover {
-  text-decoration: line-through;
+section:nth-child(even) {
+  background-color: #424242;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */

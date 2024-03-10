@@ -13,8 +13,6 @@ html {
 
 body {
   margin: 0;
-  // background-color: $black;
-  // color: $white;
   font-size: 16px;
   line-height: 1.6;
   font-family: "Montserrat", sans-serif;
@@ -22,14 +20,108 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-// CUSTOMIZE
+a {
+  color: inherit;
+}
 
-.link {
-  text-decoration: none;
-  color: $black;
+// COMMON
 
-  &:hover {
-    text-decoration: line-through;
-    // color: yellow;
+.container {
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-12 {
+  gap: theme_spacing(12);
+}
+
+// HEADER
+
+#header {
+  height: theme_spacing(7);
+
+  .logo {
+    display: flex;
+    align-items: flex-start;
+    gap: theme_spacing(0.5);
+  }
+
+  .nav {
+    .nav-item {
+      display: inline-block;
+
+      a {
+        padding: theme_spacing(1);
+
+        &[aria-current],
+        &:hover {
+          background-color: $black;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+// ABOUT
+
+#about {
+}
+
+// SKILL
+
+#skill {
+}
+
+// PROJECT
+
+#project {
+}
+
+// CONTACT
+
+#contact {
+}
+
+// FOOTER
+
+#footer {
+  background-color: $grey_900;
+  color: $white;
+  padding: theme_spacing(10);
+}
+
+// TEMPORARY CSS
+
+section {
+  height: 50vh;
+
+  &:nth-child(odd) {
+    background-color: $white;
+    color: $black;
+  }
+
+  &:nth-child(even) {
+    background-color: $grey_800;
+    color: $white;
   }
 }

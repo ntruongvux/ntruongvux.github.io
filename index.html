@@ -11,46 +11,94 @@
     <title>Vu Nguyen Truong | Fullstack Developer</title>
   </head>
   <body>
-    <header>
-      <div class="logo"><img src="favicon.svg" /> Vu Nguyen</div>
-      <nav>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#skill">Skills</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </nav>
+    <header id="header" class="flex justify-center">
+      <div class="container flex align-center">
+        <div class="logo"><img src="favicon.svg" /></div>
+        <div class="flex-grow"></div>
+        <nav class="nav">
+          <li class="nav-item">
+            <a href="#about" aria-current="page">About me</a>
+          </li>
+          <li class="nav-item"><a href="#skill">Skills</a></li>
+          <li class="nav-item"><a href="#project">Projects</a></li>
+          <li class="nav-item">
+            <a href="#contact">Contact</a>
+          </li>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="about">
-        <h1>
-          <a class="link" href="https://www.linkedin.com/in/ntruongvux/"
-            >Vu Nguyen Truong</a
-          >
-        </h1>
-        <p>Fullstack Developer</p>
+      <section id="about" class="flex justify-center">
+        <div class="container">
+          <h1>
+            <a href="https://www.linkedin.com/in/ntruongvux/"
+              >Vu Nguyen Truong</a
+            >
+          </h1>
+          <p>Fullstack Developer</p>
+        </div>
       </section>
-      <section class="skill">
-        <h1>Skills</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
+      <section id="skill" class="flex justify-center">
+        <div class="container">
+          <h1>Skills</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
       </section>
-      <section class="project">
-        <h1>Projects</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
+      <section id="project" class="flex justify-center">
+        <div class="container">
+          <h1>Projects</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
       </section>
-      <section class="contact">
-        <h1>Contact</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
+      <section id="contact" class="flex justify-center">
+        <div class="container">
+          <h1>Contact</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
       </section>
     </main>
-    <footer>footer</footer>
+    <footer id="footer" class="flex justify-center">
+      <div class="container">
+        <div class="logo"><img src="favicon.svg" /></div>
+        <div class="flex gap-12">
+          <div class="column">
+            <h4>Top Tutorials</h4>
+            <div class="list">
+              <div class="list-item">About</div>
+              <div class="list-item">Skill</div>
+              <div class="list-item">Project</div>
+              <div class="list-item">Contact</div>
+            </div>
+          </div>
+          <div class="column">
+            <h4>Top References</h4>
+            <div class="list">
+              <div class="list-item">About</div>
+              <div class="list-item">Skill</div>
+              <div class="list-item">Project</div>
+              <div class="list-item">Contact</div>
+            </div>
+          </div>
+          <div class="column">
+            <h4>Top Examples</h4>
+            <div class="list">
+              <div class="list-item">About</div>
+              <div class="list-item">Skill</div>
+              <div class="list-item">Project</div>
+              <div class="list-item">Contact</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
