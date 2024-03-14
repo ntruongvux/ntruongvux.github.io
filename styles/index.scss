@@ -27,7 +27,7 @@ a {
 // COMMON
 
 .container {
-  width: 80%;
+  width: 70%;
 }
 
 .flex {
@@ -50,13 +50,24 @@ a {
   align-items: center;
 }
 
-.gap-12 {
-  gap: theme_spacing(12);
+.hidden {
+  display: none;
+}
+
+// BODY
+
+body {
+  background-color: $grey_200;
 }
 
 // HEADER
 
 #header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
   height: theme_spacing(7);
 
   .logo {
@@ -68,60 +79,45 @@ a {
   .nav {
     .nav-item {
       display: inline-block;
+      padding: theme_spacing(1);
 
-      a {
-        padding: theme_spacing(1);
-
-        &[aria-current],
-        &:hover {
-          background-color: $black;
-          color: $white;
-        }
+      &.active,
+      &:hover {
+        cursor: pointer;
+        background-color: $black;
+        color: $white;
       }
     }
   }
 }
 
+// MAIN
+
+#main {
+  padding-top: theme_spacing(7);
+  height: calc(100vh - theme_spacing(7));
+}
+
 // ABOUT
 
 #about {
+  height: 100%;
 }
 
 // SKILL
 
 #skill {
+  height: 100%;
 }
 
 // PROJECT
 
 #project {
+  height: 100%;
 }
 
 // CONTACT
 
 #contact {
-}
-
-// FOOTER
-
-#footer {
-  background-color: $grey_900;
-  color: $white;
-  padding: theme_spacing(10);
-}
-
-// TEMPORARY CSS
-
-section {
-  height: 50vh;
-
-  &:nth-child(odd) {
-    background-color: $white;
-    color: $black;
-  }
-
-  &:nth-child(even) {
-    background-color: $grey_800;
-    color: $white;
-  }
+  height: 100%;
 }
